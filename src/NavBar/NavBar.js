@@ -1,7 +1,7 @@
 import { slide as Menu } from 'react-burger-menu';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import React, { useState } from 'react';
+import React from 'react';
 
 const NavBar = () => {
     return (
