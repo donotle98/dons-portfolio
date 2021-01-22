@@ -4,13 +4,21 @@ import sightsImg from './assets/sights.png';
 import img from './assets/ACS_0035.JPG';
 import gsnImg from './assets/GSN-Home.png';
 import srImg from './assets/spacedRep.png';
+import { Button, Linking, StyleSheet, View } from 'react-native';
+
 const LandingPage = () => {
     const [contact, setContact] = useState(false);
     const handleContact = () => {
         if (contact) {
             return (
                 <div className='contact-info contact'>
-                    <span style={{ paddingBottom: '.5rem' }}>
+                    <span
+                        style={{ paddingBottom: '.5rem' }}
+                        onClick={() =>
+                            Linking.openURL('mailto:donovanle18@gmail.com')
+                        }
+                        target='_blank'
+                    >
                         donovanle18@gmail.com
                     </span>
                     <a
@@ -72,12 +80,16 @@ const LandingPage = () => {
                         <p>Built using React, Node, Express and PostgreSQL</p>
                         <p>
                             This web app was made to allow users to find sight
-                            seeing locations to visit in California
+                            seeing locations to visit in California. I built
+                            this app to fix the problem of easily finding
+                            sights, sharing your own sights, and keeping all
+                            these sights in one easy to find place.
                         </p>
                         <p>
                             Users can sign up to bookmark sights, submit a new
                             sight, or contact an admin to change details about a
-                            sight.
+                            sight. This app is really for users that are
+                            visiting or living in California.
                         </p>
                     </div>
                     <div className='gsn indi-projects'>
@@ -99,12 +111,19 @@ const LandingPage = () => {
                         <p>Built using React, Node, Express and PostgreSQL</p>
                         <p>
                             This web app was made to allow users to better
-                            connect with other video game fans
+                            connect with other video game fans. My group and I
+                            built this app to solve the problem of finding
+                            others that play the same game. It makes it easier
+                            to build relations and communities.
                         </p>
                         <p>
                             Users can sign up to create a profile, upload their
                             activities and images, find other people who play
                             the same games, and create communities of friends.
+                            This app was made for the shy gamers that have
+                            trouble finding friends to play games with. This
+                            website is an easy place to upload your achievements
+                            and find groups that have a interest like yours.
                         </p>
                     </div>
                     <div className='spaced-rep indi-projects'>
@@ -129,14 +148,20 @@ const LandingPage = () => {
                         <p>
                             This web app was made to allow users to practice
                             specific words in another language, the language I
-                            wanted users to learn was italian.
+                            wanted users to learn was italian. This app was made
+                            to solve the problem of the intimidation of learning
+                            another language. If the user starts with just a few
+                            words to learn, then they can transition into more
+                            words and even sentences.
                         </p>
                         <p>
                             Users can sign up to view a dashboard which
                             contained a list of words. Their score of how many
                             times they have tried to guess each word, and their
                             total overall score of how many they got wrong and
-                            got right.
+                            got right. This app was made for the quick learners,
+                            people who just want to have a little fun while
+                            learning another language.
                         </p>
                     </div>
                 </div>
@@ -182,6 +207,10 @@ const StyledWrapper = styled.main`
         margin-top: 2rem;
         margin-bottom: 2rem;
         color: #98d98b;
+        span{
+            cursor: pointer;
+            text-decoration: underline;
+        }
 
         a {
         color: #98d98b;
