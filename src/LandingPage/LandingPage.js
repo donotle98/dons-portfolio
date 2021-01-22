@@ -4,7 +4,7 @@ import sightsImg from './assets/sights.png';
 import img from './assets/ACS_0035.JPG';
 import gsnImg from './assets/GSN-Home.png';
 import srImg from './assets/spacedRep.png';
-import { Button, Linking, StyleSheet, View } from 'react-native';
+import { Linking } from 'react-native';
 
 const LandingPage = () => {
     const [contact, setContact] = useState(false);
