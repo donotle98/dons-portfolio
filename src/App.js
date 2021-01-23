@@ -1,10 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Redirect,
+    Route,
+    Switch,
+} from 'react-router-dom';
 import LandingPage from './LandingPage/LandingPage';
 import styled from 'styled-components';
 import Nav from './NavBar/NavBar';
 import './App.css';
 import About from './AboutMe/about';
+import MoreProjects from './MoreProjects/MoreProjects';
+import Blog from './Blog/Blog';
 
 const App = () => {
     return (
@@ -20,6 +27,13 @@ const App = () => {
                     <Route exact path='/about'>
                         <About />
                     </Route>
+                    <Route exact path='/projects'>
+                        <MoreProjects />
+                    </Route>
+                    <Route exact path='/blog'>
+                        <Blog />
+                    </Route>
+                    <Redirect path='*' to='/'></Redirect>
                 </Switch>
             </Router>
         </StyledWrapper>

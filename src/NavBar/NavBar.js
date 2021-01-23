@@ -11,8 +11,8 @@ const NavBar = () => {
                     <div className='sidebar'>
                         <Link to='/'>Home</Link>
                         <Link to='/about'>About me</Link>
-                        {/* <Link to='/projects'>More Projects</Link>
-                        <Link to='/blog'>Blog</Link> */}
+                        <Link to='/projects'>More Projects</Link>
+                        <Link to='/blog'>Blog</Link>
                     </div>
                 </Menu>
             </div>
@@ -24,12 +24,12 @@ const NavBar = () => {
                     <li>
                         <Link to='/about'>About me</Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link to='/projects'>More Projects</Link>
                     </li>
                     <li>
                         <Link to='/blog'>Blog</Link>
-                    </li> */}
+                    </li>
                 </ul>
             </div>
         </StyledWrapper>
