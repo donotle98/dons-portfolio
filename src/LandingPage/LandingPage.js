@@ -323,8 +323,8 @@ const StyledWrapper = styled.main`
             .image{
                 position: fixed;
                 top: 5rem;
-                width: 40%;
-                height: 30%;
+                width: 35%;
+                height: 35%;
                 z-index: -100;
             }
         }
