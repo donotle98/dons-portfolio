@@ -317,14 +317,15 @@ const StyledWrapper = styled.main`
         header {
             grid-area: 1 / 1 / 2 / 2;
             position: fixed;
-            bottom: 15rem;
+            bottom: 12rem;
             left: 3%;
 
             .image{
                 position: fixed;
                 top: 5rem;
                 width: 40%;
-                height: 40%;
+                height: 30%;
+                z-index: -100;
             }
         }
         .contact-info{
@@ -332,7 +333,7 @@ const StyledWrapper = styled.main`
         }
         .contact {
             position: fixed;
-            bottom: 2rem;
+            bottom: 0rem;
             left: 3%;
         }
         .main-projects {
@@ -341,7 +342,7 @@ const StyledWrapper = styled.main`
 
             .sights-in-cali {
                 .sic-image {
-                height: 25rem;
+                    height: 25rem;
                 }
             }
 
