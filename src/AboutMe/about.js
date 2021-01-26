@@ -48,28 +48,28 @@ const about = () => {
                         <div className='fourthImg grid-img'></div>
                     </div>
                     <p>
-                        I love photography, taking and looking at them. My
-                        interest in photography peaked in high school, where one
-                        of the best teachers ever made me one of only 4 advanced
-                        photography students. He made it so fun and interesting.
-                        He constantly kept pushing us to go out and explore and
-                        really delve deep into the environment we shot in. The
-                        best part of photography is that each photograph does
-                        not have to mean anything to the photographer or the
-                        viewer. It can simply just be a photograph of something
-                        you think looks nice. It can also be great to meet and
-                        socialize with new people. Whether your taking on a
-                        client for new photos or you're working with new
-                        photographers to create a new scene or portfolio
-                        together. <br /> I also have a very fond interest in
-                        video games, specifically FPS games. The reason I have a
-                        big interest in FPS games is because for the most part
-                        you work with a team to complete an objective. One of
-                        the games I play is Apex Legends. I actually play it so
-                        much I'm involved in a lot of the tournaments the game
-                        will host, where my team and I will play with
-                        professional gamers. It is a great way to test our
-                        skills and really perfect our communication.
+                        I love photography. My interest in photography peaked in
+                        high school, where one of the best teachers ever made me
+                        one of only 4 advanced photography students. He made it
+                        so fun and interesting. He constantly kept pushing us to
+                        go out and explore and really delve deep into the
+                        environment we shot in. The best part of photography is
+                        that each photograph does not have to mean anything to
+                        the photographer or the viewer. It can simply just be a
+                        photograph of something you think looks nice. It can
+                        also be a great way to meet and socialize with new
+                        people. Whether you are taking on a client for new
+                        photos or you're working with new photographers to
+                        create a new scene or portfolio together. <br /> I also
+                        have a very big interest in playing video games,
+                        specifically FPS games. The reason I have a big interest
+                        in FPS games is because for the most part you work with
+                        a team to complete an objective. One of the games I play
+                        is Apex Legends. I actually play it so much I'm involved
+                        in a lot of the tournaments the game developers will
+                        host, where my team and I will play with professional
+                        gamers. It is a great way to test our skills and really
+                        perfect our communication.
                     </p>
                 </div>
             </div>
