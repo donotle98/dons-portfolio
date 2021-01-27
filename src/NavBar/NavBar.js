@@ -85,7 +85,7 @@ const StyledWrapper = styled.main`
         font-size: 1.8rem;
     }
 
-    @media all and (min-width: 800px) {
+    @media all and (min-width: 1000px) {
         .mobile {
             display: none;
         }
@@ -101,14 +101,23 @@ const StyledWrapper = styled.main`
 
             li {
                 list-style-type: none;
-                margin-right: 1rem;
+                margin-right: 2rem;
 
                 a {
                     font-size: 1.1rem;
                     color: white;
+                    text-decoration: none;
+                    border-top: solid 1px white;
+                    border-bottom: solid 1px white;
+                    padding: 0.3rem 1rem 0.3rem 1rem;
+                    transition: 0.5s;
                 }
                 a:hover {
                     color: lightblue;
+                    padding: 0rem 0.5rem 0rem 0.5rem;
+                    border-top: solid 1px lightblue;
+                    border-bottom: solid 1px lightblue;
+                    transition: 0.5s;
                 }
             }
         }

@@ -5,6 +5,7 @@ import img from './assets/ACS_0035.JPG';
 import gsnImg from './assets/GSN-Home.png';
 import srImg from './assets/spacedRep.png';
 import { Linking } from 'react-native';
+import { FaChevronDown } from 'react-icons/fa';
 
 const LandingPage = () => {
     const [contact, setContact] = useState(false);
@@ -54,12 +55,25 @@ const LandingPage = () => {
                         </div>
                         <span className='special-name'>Le</span>
                     </div>
-                    <span className='full-stack'>Full-Stack Developer</span>
+                    <div className='full-stack'>
+                        <span>Full-Stack Developer</span>
+                    </div>
                 </header>
                 {handleContact()}
+                <a href='#first-project'>
+                    <div className='link-projects'>
+                        <span>Some of my work</span>
+                        <span>
+                            <FaChevronDown />
+                        </span>
+                    </div>
+                </a>
                 <div className='main-projects'>
                     <h1>Some of my work</h1>
-                    <div className='sights-in-cali indi-projects'>
+                    <div
+                        className='sights-in-cali indi-projects'
+                        id='first-project'
+                    >
                         <h2>Sights in California</h2>
                         <div className='sic-image'></div>
                         <div className='links'>
@@ -186,16 +200,41 @@ const StyledWrapper = styled.main`
             font-size: 2.4rem;
             display: flex;
             flex-direction: column;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
 
             .special-name {
                 color: lightblue;
                 font-size: 2.5rem;
             }
+            
         }
         .full-stack{
             color: lightblue;
-            font-size: 2.4rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            span{
+                color: #fff;
+                font-size: 2.6rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                background: linear-gradient(to right,lightblue 10%, lightblue 50%, white 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+                text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 5.5s linear infinite;
+                display: inline-block;
+            }
+        }
+    }
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
         }
     }
     .contact-info {
@@ -240,13 +279,28 @@ const StyledWrapper = styled.main`
             color: #98d98b;
         }
     }
+    a{
+        color: white;
+    }
+
+    .link-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 10rem;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
 
     .main-projects {
         h1 {
             text-align: center;
             font-size: 1.7rem;
+            display: none;
         }
         h2 {
+            text-align: center;
             font-size: 1.2rem;
             border-bottom: solid 1px white;
         }
@@ -304,6 +358,23 @@ const StyledWrapper = styled.main`
         }
     }
 
+    @media all and (min-width: 500px){
+        header{
+            .image{
+                width: 60%;
+                margin: auto;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .main-projects{
+            h1{
+                display: block;
+            }
+        }
+    }
+
     @media all and (min-width: 800px) {
         .parent {
             width: 100%:
@@ -327,7 +398,13 @@ const StyledWrapper = styled.main`
                 height: 35%;
                 z-index: -100;
             }
+            .full-stack{
+                span{
+                    font-size: 1.8rem;
+                }
+            }
         }
+
         .contact-info{
             font-size: 1.2rem;
         }
@@ -336,9 +413,17 @@ const StyledWrapper = styled.main`
             bottom: 0rem;
             left: 3%;
         }
+
+        .link-projects{
+            display: none;
+        }
         .main-projects {
             margin-right: 2rem;
             grid-area: 1 / 2 / 2 / 3;
+
+            h2{
+                text-align: left;
+            }
 
             .sights-in-cali {
                 .sic-image {
@@ -348,14 +433,23 @@ const StyledWrapper = styled.main`
 
             .gsn{
                 .gsn-image{
-                    
                     height: 25rem;
                 }
             }
 
             .spaced-rep{
                 .sr-image{
-                   height: 25rem;
+                    height: 25rem;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: 1050px){
+        header{
+            .full-stack{
+                span{
+                    font-size: 2.5rem;
                 }
             }
         }

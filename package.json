@@ -9,6 +9,8 @@
     "react": "^17.0.1",
     "react-burger-menu": "^3.0.3",
     "react-dom": "^17.0.1",
+    "react-fontawesome": "^1.7.1",
+    "react-icons": "^4.1.0",
     "react-native-cli": "^2.0.1",
     "react-native-dom": "^0.5.0",
     "react-native-web": "^0.14.10",

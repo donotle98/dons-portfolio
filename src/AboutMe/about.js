@@ -86,8 +86,9 @@ const StyledWrapper = styled.main`
         h1 {
             text-align: center;
             color: white;
-            margin-top: 4rem;
+            margin-top: 7rem;
         }
+
         .personal {
             .person-img {
                 background-image: url(${me});
