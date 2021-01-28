@@ -12,7 +12,7 @@ const NavBar = () => {
                         <Link to='/'>Home</Link>
                         <Link to='/about'>About me</Link>
                         <Link to='/projects'>More Projects</Link>
-                        <Link to='/blog'>Blog</Link>
+                        <a href='https://blog.donle.dev/'>Blog</a>
                     </div>
                 </Menu>
             </div>
@@ -28,7 +28,7 @@ const NavBar = () => {
                         <Link to='/projects'>More Projects</Link>
                     </li>
                     <li>
-                        <Link to='/blog'>Blog</Link>
+                        <a href='https://blog.donle.dev/'>Blog</a>
                     </li>
                 </ul>
             </div>

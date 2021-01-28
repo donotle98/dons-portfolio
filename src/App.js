@@ -11,7 +11,6 @@ import Nav from './NavBar/NavBar';
 import './App.css';
 import About from './AboutMe/about';
 import MoreProjects from './MoreProjects/MoreProjects';
-import Blog from './Blog/Blog';
 
 const App = () => {
     return (
@@ -29,9 +28,6 @@ const App = () => {
                     </Route>
                     <Route exact path='/projects'>
                         <MoreProjects />
-                    </Route>
-                    <Route exact path='/blog'>
-                        <Blog />
                     </Route>
                     <Redirect path='*' to='/'></Redirect>
                 </Switch>
