@@ -86,7 +86,7 @@ const StyledWrapper = styled.div`
     .title {
         font-size: 1.7rem;
         text-decoration: underline;
-        color: #b9134f;
+        color: white;
     }
 
     .tech {
@@ -117,7 +117,7 @@ const StyledWrapper = styled.div`
     .img:hover {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
-        border: solid 1px #b9134f;
+        border: solid 1px #8fc0a9;
         transition: filter 0.5s ease-in-out;
     }
 

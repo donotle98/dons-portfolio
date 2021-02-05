@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import img from './assets/me.JPG';
+import img from './assets/me.jpeg';
 import githubIcon from './assets/github-icon.png';
 import linkedinIcon from './assets/linkedin-icon.png';
 import Body from './Body/Body';

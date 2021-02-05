@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 
 const NavBar = () => {
     const [page, setPage] = useState('home');
-    //rgb(48, 48, 48, .8)
     return (
         <StyledWrapper>
             <div className='nav-wrapper'>
