@@ -8,9 +8,9 @@ const NavBar = () => {
         <StyledWrapper>
             <div className='nav-wrapper'>
                 <ul>
-                    <Link to='/home'>
-                        <li
-                            onClick={() => setPage('home')}
+                    <li onClick={() => setPage('home')}>
+                        <Link
+                            to='/home'
                             style={{
                                 textDecoration:
                                     page === 'home' ? 'line-through' : 'none',
@@ -18,11 +18,12 @@ const NavBar = () => {
                             }}
                         >
                             Home
-                        </li>
-                    </Link>
-                    <Link to='/about'>
-                        <li
-                            onClick={() => setPage('about')}
+                        </Link>
+                    </li>
+
+                    <li onClick={() => setPage('about')}>
+                        <Link
+                            to='/about'
                             style={{
                                 textDecoration:
                                     page === 'about' ? 'line-through' : 'none',
@@ -30,11 +31,12 @@ const NavBar = () => {
                             }}
                         >
                             About
-                        </li>
-                    </Link>
-                    <Link to='/projects'>
-                        <li
-                            onClick={() => setPage('projects')}
+                        </Link>
+                    </li>
+
+                    <li onClick={() => setPage('projects')}>
+                        <Link
+                            to='/projects'
                             style={{
                                 textDecoration:
                                     page === 'projects'
@@ -45,11 +47,12 @@ const NavBar = () => {
                             }}
                         >
                             Projects
-                        </li>
-                    </Link>
-                    <Link to='/contact'>
-                        <li
-                            onClick={() => setPage('contact')}
+                        </Link>
+                    </li>
+
+                    <li onClick={() => setPage('contact')}>
+                        <Link
+                            to='/contact'
                             style={{
                                 textDecoration:
                                     page === 'contact'
@@ -59,8 +62,8 @@ const NavBar = () => {
                             }}
                         >
                             Contact
-                        </li>
-                    </Link>
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </StyledWrapper>
@@ -75,15 +78,18 @@ const StyledWrapper = styled.main`
             ul {
                 background-color: rgb(48, 48, 48, 0.8);
                 display: flex;
-                color: white;
+
                 padding: 1rem;
-                a {
-                    text-decoration: none;
-                }
+
                 li {
                     list-style-type: none;
                     padding-right: 1rem;
                     font-size: 1.2rem;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
             }
         }
@@ -93,15 +99,15 @@ const StyledWrapper = styled.main`
             ul {
                 display: flex;
 
-                color: white;
-                a {
-                    text-decoration: none;
-                }
                 li {
                     list-style-type: none;
-                    margin-right: 3rem;
-                    padding: 1rem;
-                    font-size: 1.2rem;
+                    margin-right: 4rem;
+                    padding-right: 3rem;
+                    font-size: 1.4rem;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
 
                 li:hover {
