@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import img from './assets/me.JPG';
 import githubIcon from './assets/github-icon.png';
 import linkedinIcon from './assets/linkedin-icon.png';
-import { Linking } from 'react-native';
-import { FaChevronDown } from 'react-icons/fa';
 import Body from './Body/Body';
 
 const LandingPage = () => {
@@ -39,6 +37,7 @@ const LandingPage = () => {
                         className='blog-link mobile-link'
                         href='https://blog.donle.dev/'
                         target='_blank'
+                        rel='noreferrer'
                     >
                         View my Blog
                     </a>
@@ -46,15 +45,17 @@ const LandingPage = () => {
                         href='https://github.com/donotle98'
                         className='github-icon mobile-link'
                         target='_blank'
+                        rel='noreferrer'
                     >
-                        <img src={`${githubIcon}`}></img>
+                        <img src={`${githubIcon}`} alt='link to site'></img>
                     </a>
                     <a
                         href='https://www.linkedin.com/in/dtle647/'
                         className='linkedin-icon mobile-link'
                         target='_blank'
+                        rel='noreferrer'
                     >
-                        <img src={`${linkedinIcon}`}></img>
+                        <img src={`${linkedinIcon}`} alt='link to site'></img>
                     </a>
                     <h1 className='mobile-name'>Donovan</h1>
                     <h1 className='mobile-title'>Le</h1>
@@ -68,6 +69,7 @@ const LandingPage = () => {
                             className='blog-link'
                             href='https://blog.donle.dev/'
                             target='_blank'
+                            rel='noreferrer'
                         >
                             View my Blog
                         </a>
@@ -75,15 +77,20 @@ const LandingPage = () => {
                             href='https://github.com/donotle98'
                             className='icon'
                             target='_blank'
+                            rel='noreferrer'
                         >
-                            <img src={`${githubIcon}`}></img>
+                            <img src={`${githubIcon}`} alt='link to site'></img>
                         </a>
                         <a
                             href='https://www.linkedin.com/in/dtle647/'
                             className='icon'
                             target='_blank'
+                            rel='noreferrer'
                         >
-                            <img src={`${linkedinIcon}`}></img>
+                            <img
+                                src={`${linkedinIcon}`}
+                                alt='link to site'
+                            ></img>
                         </a>
                     </div>
                 </div>

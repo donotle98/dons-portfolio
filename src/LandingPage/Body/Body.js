@@ -1,9 +1,6 @@
 import React from 'react';
-import sightsImg from '../assets/sights.png';
 import mobileSightsImg from '../assets/sights-mobile.png';
-import gsnImg from '../assets/gsn-desktop.png';
 import mobileGsnImg from '../assets/gsn-mobile.png';
-import blogImg from '../assets/blog-desktop.png';
 import mobileBlogImg from '../assets/blog-mobile.png';
 import styled from 'styled-components';
 

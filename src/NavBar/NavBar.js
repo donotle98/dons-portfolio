@@ -1,7 +1,6 @@
-import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const NavBar = () => {
     const [page, setPage] = useState('home');
