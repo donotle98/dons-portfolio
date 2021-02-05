@@ -6,9 +6,10 @@ import linkedinIcon from './assets/linkedin-icon.png';
 import Body from './Body/Body';
 
 const LandingPage = () => {
-    let listener = null;
     const [scrollState, setScrollState] = useState('top');
+
     useEffect(() => {
+        let listener = null;
         listener = document.addEventListener('scroll', (e) => {
             var scrolled = document.scrollingElement.scrollTop;
             if (scrolled >= 120) {
