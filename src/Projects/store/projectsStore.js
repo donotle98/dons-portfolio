@@ -3,6 +3,8 @@ import chatApp from './assets/chatAppMobile.png';
 import petful from './assets/petfulMobile.png';
 import spacedRep from './assets/spacedRep.png';
 import noteful from './assets/noteful.png';
+import weatherVue from './assets/weatherVue.png';
+import todoVue from './assets/todoVue.png';
 
 export const projects = [
     {
@@ -55,5 +57,25 @@ export const projects = [
         client_link: 'https://github.com/donotle98/noteful',
         server_link: 'https://github.com/donotle98/noteful-server',
         live_app: 'https://noteful-seven-psi.vercel.app/',
+    },
+    {
+        title: 'Weather App',
+        img: weatherVue,
+        tech: 'Vue.js, openweatherAPI',
+        description:
+            'Users can search any city or state and get back temperature, and weather',
+        client_link: 'https://github.com/donotle98/vue-weather-app',
+        server_link: '',
+        live_app: 'https://vue-weather-app-eight.vercel.app/',
+    },
+    {
+        title: 'Todo List App',
+        img: todoVue,
+        tech: 'Vue.js',
+        description:
+            'Todo list where users can add or delete items, data does not persist',
+        client_link: 'https://github.com/donotle98/vue-todo-list',
+        server_link: '',
+        live_app: 'https://vue-todo-list-lac.vercel.app/',
     },
 ];

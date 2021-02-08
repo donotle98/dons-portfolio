@@ -18,22 +18,26 @@ const Projects = () => {
                                         backgroundImage: `url(${project.img})`,
                                     }}
                                 ></div>
-                                <span className='tech'>{project.tech}</span>
-                                <span className='desc'>
-                                    {project.description}
-                                </span>
-                                <div className='links'>
-                                    <a href={project.client_link}>
-                                        Client code
-                                    </a>
-                                    {project.server_link?.length > 0 ? (
-                                        <a href={project.server_link}>
-                                            Server Link
+                                <div className='overlay'>
+                                    <span className='tech'>{project.tech}</span>
+                                    <span className='desc'>
+                                        {project.description}
+                                    </span>
+                                    <div className='links'>
+                                        <a href={project.client_link}>
+                                            Client code
                                         </a>
-                                    ) : null}
-                                    {project.live_app?.length > 0 ? (
-                                        <a href={project.live_app}>Live App</a>
-                                    ) : null}
+                                        {project.server_link?.length > 0 ? (
+                                            <a href={project.server_link}>
+                                                Server Link
+                                            </a>
+                                        ) : null}
+                                        {project.live_app?.length > 0 ? (
+                                            <a href={project.live_app}>
+                                                Live App
+                                            </a>
+                                        ) : null}
+                                    </div>
                                 </div>
                             </div>
                         );
@@ -58,61 +62,82 @@ const StyledWrapper = styled.div`
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        margin-right: 9rem;
+        grid-auto-rows: minmax(50px, 100%);
 
         .each-project {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .title {
+            font-size: 1.6rem;
+        }
+
+        .project-img {
+            display: block;
+            background-size: cover;
+            background-position: center top;
+            width: 100%;
+            height: 30rem;
+            border-radius: 5rem;
+        }
+
+        .overlay {
+            opacity: 0;
+            position: absolute;
+            top: 2;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 5rem;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -ms-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
             display: flex;
             flex-direction: column;
-            padding: 1rem;
-            border: solid 1px white;
-            border-radius: 4rem;
-            width: 100%;
-            height: 45rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-
-            .title {
-                font-size: 1.4rem;
-                text-align: center;
-                margin-bottom: 1rem;
-            }
 
             .tech {
-                font-size: 1.2rem;
-                margin-top: 1rem;
-                margin-bottom: 1.5rem;
+                font-size: 1.3rem;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
             }
+
             .desc {
-                line-height: 1.6rem;
-                margin-bottom: 1rem;
+                font-size: 1.1rem;
+                padding: 1rem;
             }
 
             .links {
                 display: flex;
                 flex-direction: column;
-                line-height: 2rem;
-                padding-bottom: 3rem;
 
                 a {
-                    color: white;
+                    color: #8fc0a9;
+                    margin-top: 1rem;
                 }
             }
+        }
 
-            .project-img {
-                background-size: cover;
-                background-position: center center;
-                height: 30rem;
-                width: 20rem;
-                margin: auto;
-            }
+        .each-project:hover .overlay {
+            opacity: 1;
         }
     }
-    @media all and (min-width: 900px) {
+
+    @media all and (min-width: 700px) {
         .project-wrapper {
             grid-template-columns: repeat(2, 1fr);
-            margin-top: 2%;
-
+            margin-top: 10%;
+            margin-left: 2rem;
             .each-project {
                 width: 22rem;
             }
@@ -121,6 +146,8 @@ const StyledWrapper = styled.div`
 
     @media all and (min-width: 1330px) {
         .project-wrapper {
+            margin-top: 2%;
+            margin-left: 3rem;
             grid-template-columns: repeat(3, 1fr);
         }
     }

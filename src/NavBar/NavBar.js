@@ -101,8 +101,7 @@ const StyledWrapper = styled.main`
 
                 li {
                     list-style-type: none;
-                    margin-right: 4rem;
-                    padding-right: 3rem;
+                    margin-right: 5rem;
                     font-size: 1.4rem;
                     a {
                         text-decoration: none;

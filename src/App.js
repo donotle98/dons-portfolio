@@ -55,7 +55,7 @@ const StyledWrapper = styled.main`
             transform: rotate(90deg);
             position: fixed;
             right: -260px;
-            top: 60%;
+            top: 50%;
             z-index: 1000;
         }
     }
