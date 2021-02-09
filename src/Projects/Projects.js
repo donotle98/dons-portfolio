@@ -71,7 +71,7 @@ const StyledWrapper = styled.div`
             max-width: 100%;
             height: auto;
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
         }
 
         .title {
@@ -120,9 +120,13 @@ const StyledWrapper = styled.div`
             .links {
                 display: flex;
                 flex-direction: column;
+                margin-top: 10rem;
 
                 a {
+                    font-size: 1.3rem;
+                    width: 8rem;
                     color: #8fc0a9;
+                    margin: auto;
                     margin-top: 1rem;
                 }
             }

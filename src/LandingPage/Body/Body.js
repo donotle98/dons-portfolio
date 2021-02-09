@@ -142,6 +142,7 @@ const StyledWrapper = styled.div`
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
+            margin-right: 10rem;
         }
     }
 `;
