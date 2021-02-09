@@ -223,7 +223,7 @@ const StyledWrapper = styled.main`
                 background-position: -70px center;
                 background-repeat: no-repeat;
                 width: 100%;
-                min-height: 100vh;
+                height: 50rem;
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
                 transition: filter 0.5s ease-in-out;

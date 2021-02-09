@@ -1,7 +1,7 @@
 import React from 'react';
 import mobileSightsImg from '../assets/sights-mobile.png';
 import mobileGsnImg from '../assets/gsn-mobile.png';
-import mobileBlogImg from '../assets/blog-mobile.png';
+import mobileBlogImg from '../../Projects/store/assets/covidMobile.png';
 import styled from 'styled-components';
 
 const Body = () => {
@@ -54,16 +54,23 @@ const Body = () => {
                 <StyledBlog>
                     <div className='blog'>
                         <div className='blog-img img'></div>
-                        <p className='title'>My blog site, The Joy of Coding</p>
-                        <p className='tech'>React, Node, Express, MongoDB</p>
+                        <p className='title'>Covid-19 Tracker</p>
+                        <p className='tech'>
+                            HTML, CSS modules, React, React Chart-js,
+                            React-Countdown, Material UI
+                        </p>
                         <p className='desc'>
-                            This was made so thought I as a developer can
-                            express my thoughts, share my knowledge with those
-                            who are also learning to code.
+                            Keeps up to date covid statistics in a easy to read
+                            table and graphs, users are also able to see the
+                            statistics in different countries which are
+                            displayed in bar graphs
                         </p>
                         <p className='links'>
-                            <a href='https://github.com/donotle98/blog-portfolio'>
+                            <a href='https://github.com/donotle98/COVID19-tracker'>
                                 Client Code
+                            </a>
+                            <a href='https://covid-19-tracker-kappa.vercel.app/'>
+                                Live App
                             </a>
                         </p>
                     </div>

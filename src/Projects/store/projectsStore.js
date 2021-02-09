@@ -1,4 +1,3 @@
-import cov19 from './assets/covidMobile.png';
 import chatApp from './assets/chatAppMobile.png';
 import petful from './assets/petfulMobile.png';
 import spacedRep from './assets/spacedRep.png';
@@ -7,17 +6,6 @@ import weatherVue from './assets/weatherVue.png';
 import todoVue from './assets/todoVue.png';
 
 export const projects = [
-    {
-        title: 'COVID-19 Tracker',
-        img: cov19,
-        tech:
-            'HTML, CSS modules, React, React Chart-js, React-Countdown, Material UI',
-        description:
-            'Keeps up to date covid statistics in a easy to read table and graphs, users are also able to see the statistics in different countries which are displayed in bar graphs',
-        client_link: 'https://github.com/donotle98/COVID19-tracker',
-        server_link: '',
-        live_app: 'https://covid-19-tracker-kappa.vercel.app/',
-    },
     {
         title: 'Chat Application',
         img: chatApp,
