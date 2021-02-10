@@ -39,6 +39,7 @@ const LandingPage = () => {
                         href='https://blog.donle.dev/'
                         target='_blank'
                         rel='noreferrer'
+                        style={{ display: 'none' }}
                     >
                         View my Blog
                     </a>
@@ -71,6 +72,7 @@ const LandingPage = () => {
                             href='https://blog.donle.dev/'
                             target='_blank'
                             rel='noreferrer'
+                            style={{ display: 'none' }}
                         >
                             View my Blog
                         </a>
