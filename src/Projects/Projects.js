@@ -120,7 +120,7 @@ const StyledWrapper = styled.div`
             .links {
                 display: flex;
                 flex-direction: column;
-                margin-top: 10rem;
+                margin-top: 5rem;
 
                 a {
                     font-size: 1.3rem;
