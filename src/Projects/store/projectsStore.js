@@ -4,6 +4,7 @@ import spacedRep from './assets/spacedRep.png';
 import noteful from './assets/noteful.png';
 import weatherVue from './assets/weatherVue.png';
 import todoVue from './assets/todoVue.png';
+import musicVue from './assets/vueMusic.png';
 
 export const projects = [
     {
@@ -65,5 +66,15 @@ export const projects = [
         client_link: 'https://github.com/donotle98/vue-todo-list',
         server_link: '',
         live_app: 'https://vue-todo-list-lac.vercel.app/',
+    },
+    {
+        title: 'Music App',
+        img: musicVue,
+        tech: 'Vue.js, JS Audio',
+        description:
+            'Music application that plays, pauses, skips, and rewinds songs. Implemented with a volume bar.',
+        client_link: 'https://github.com/donotle98/vue-music-app',
+        server_link: '',
+        live_app: 'https://vue-music-app-eight.vercel.app/',
     },
 ];
