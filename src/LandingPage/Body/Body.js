@@ -130,6 +130,7 @@ const StyledWrapper = styled.div`
 
     @media all and (min-width: 450px) {
         .wrapper {
+            margin-top: 5rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import './About.scss';
 
 const About = () => {
     return (
@@ -12,7 +11,7 @@ const About = () => {
                 </header>
                 <div className='about-me'>
                     {' '}
-                    My name is Donovan and I'm a Full-Stack Engineer. I started
+                    My name is Donovan and I'm a Front-End Developer. I started
                     out coding in university where I pursued a degree in
                     Computer Science. Coding has always been a deep interest and
                     passion for me. Since my time from university, I attended
@@ -27,7 +26,6 @@ const About = () => {
                     are all very challenging aspects of front-end development
                     that I love.
                 </div>
-                <div className='caveman'></div>
             </div>
         </StyledWrapper>
     );

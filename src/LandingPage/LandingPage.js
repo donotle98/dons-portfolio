@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import img from './assets/me.jpeg';
 import githubIcon from './assets/github-icon.png';
@@ -61,7 +62,7 @@ const LandingPage = () => {
                     </a>
                     <h1 className='mobile-name'>Donovan</h1>
                     <h1 className='mobile-title'>Le</h1>
-                    <span>FULL-STACK DEVELOPER</span>
+                    <span>FRONT-END DEVELOPER</span>
                 </div>
                 <div className='img'></div>
                 <div className='right-side'>
@@ -101,12 +102,30 @@ const LandingPage = () => {
             <div className='body'>
                 <Body />
             </div>
+            <footer>
+                <Link to='/projects'>View more projects</Link>
+            </footer>
         </StyledWrapper>
     );
 };
 export default LandingPage;
 
 const StyledWrapper = styled.main`
+    footer {
+        text-align: center;
+        margin-bottom: 3rem;
+        a {
+            font-size: 1.8rem;
+            color: white;
+            text-shadow: 0px 0px 20px orange;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            text-shadow: 0px 0px 10px red;
+            transition: 0.5s;
+        }
+    }
     @media all and (max-width: 700px) {
         .header {
             color: white;
