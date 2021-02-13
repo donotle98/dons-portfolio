@@ -48,6 +48,9 @@ const Body = () => {
                             <a href='https://github.com/donotle98/gaming-social-network-server'>
                                 Server Code
                             </a>
+                            <a href='https://gaming-social-network-client-six.vercel.app/'>
+                                Live App
+                            </a>
                         </p>
                     </div>
                 </StyledGSN>
