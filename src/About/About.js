@@ -34,6 +34,8 @@ const About = () => {
 export default About;
 
 const StyledWrapper = styled.div`
+    max-width: 60rem;
+    margin: auto;
     header {
         width: 100%;
         height: 5rem;
@@ -44,15 +46,16 @@ const StyledWrapper = styled.div`
     }
 
     .about-me {
-        padding: 1rem;
+        text-align: center;
         color: white;
-        line-height: 35px;
+        padding: 1rem;
+        line-height: 45px;
+        width: 100%;
         font-size: 1.2rem;
     }
 
     @media all and (min-width: 930px) {
         header {
-            background-color: rgb(97, 97, 97, 0.3);
             margin: 0;
             height: 10rem;
             color: #8fc0a9;
