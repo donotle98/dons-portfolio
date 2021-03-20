@@ -1,62 +1,54 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Redirect,
-    Route,
-    Switch,
-} from 'react-router-dom';
-import LandingPage from './LandingPage/LandingPage';
-import About from './About/About';
-import styled from 'styled-components';
-import Nav from './NavBar/NavBar';
-import Contact from './Contact/Contact';
-import Projects from './Projects/Projects';
 import './App.css';
+import FirstSection from './components/FirstSection';
+import SecondSection from './components/SecondSection';
+import ThirdSection from './components/ThirdSection';
+import FourthSection from './components/FourthSection';
+import NavBar from './components/NavBar';
+import styled from 'styled-components';
 
-const App = () => {
+function App() {
     return (
         <StyledWrapper>
-            <Router>
+            <div className='App'>
                 <nav>
-                    <Nav />
+                    <NavBar></NavBar>
                 </nav>
-                <Switch>
-                    <Route exact path='/home'>
-                        <LandingPage />
-                    </Route>
-                    <Route exact path='/about'>
-                        <About />
-                    </Route>
-                    <Route exact path='/projects'>
-                        <Projects />
-                    </Route>
-                    <Route exact path='/contact'>
-                        <Contact />
-                    </Route>
-                    <Redirect path='*' to='/home'></Redirect>
-                </Switch>
-            </Router>
+                <header>
+                    <FirstSection></FirstSection>
+                </header>
+                <main className='projects'>
+                    <SecondSection></SecondSection>
+                </main>
+                <main className='about'>
+                    <ThirdSection></ThirdSection>
+                </main>
+                <footer className='contact'>
+                    <FourthSection></FourthSection>
+                </footer>
+            </div>
         </StyledWrapper>
     );
-};
-export default App;
+}
 
-const StyledWrapper = styled.main`
-    @media all and (max-width: 930px) {
-        nav {
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 100;
-        }
+const StyledWrapper = styled.div`
+    header {
+        min-height: 100vh;
+        position: relative;
     }
-    @media all and (min-width: 930px) {
-        nav {
-            transform: rotate(90deg);
-            position: fixed;
-            right: -260px;
-            top: 50%;
-            z-index: 1000;
-        }
+    .projects {
+        position: relative;
+        min-height: 125vh;
+    }
+    .about {
+        position: relative;
+        min-height: 100vh;
+        background-color: #081588;
+    }
+    .contact {
+        position: relative;
+        min-height: 100vh;
     }
 `;
+
+export default App;
