@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import githubIcon from './assets/github-icon.png';
 import linkedinIcon from './assets/linkedin-icon.png';
+import downArrow from './assets/down-arrow.png';
 import imgMe from './assets/me.jpeg';
 
 const FirstSection = () => {
@@ -34,6 +35,10 @@ const FirstSection = () => {
                 <div className='img-me'>
                     <img src={`${imgMe}`}></img>
                 </div>
+
+                <div className='down-arrow'>
+                    <img src={`${downArrow}`}></img>
+                </div>
             </div>
         </StyledWrapper>
     );
@@ -43,11 +48,13 @@ export default FirstSection;
 
 const StyledWrapper = styled.div`
     padding-left: 0.5rem;
+    margin-top: 2rem;
     .name {
         color: #081588;
         display: flex;
         flex-direction: column;
         font-family: Roboto Condensed;
+        padding-bottom: 0.5rem;
 
         .first-name {
             font-size: 4rem;
@@ -69,7 +76,7 @@ const StyledWrapper = styled.div`
 
     h1 {
         position: absolute;
-        top: 13rem;
+        top: 14rem;
         color: #081588;
         font-family: Roboto Condensed;
         font-size: 3.5rem;
@@ -90,6 +97,16 @@ const StyledWrapper = styled.div`
             right: 0;
             width: 17rem;
             box-shadow: -10px 10px 0px white;
+        }
+    }
+
+    .down-arrow {
+        position: absolute;
+        bottom: 10rem;
+        left: 48.5%;
+
+        img {
+            width: 2rem;
         }
     }
 
