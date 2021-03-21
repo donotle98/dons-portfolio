@@ -33,7 +33,7 @@ function App() {
 
 const StyledWrapper = styled.div`
     header {
-        min-height: 80vh;
+        min-height: 100vh;
         position: relative;
     }
     .projects {

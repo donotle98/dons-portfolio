@@ -49,6 +49,7 @@ export default ThirdSection;
 const StyledWrapper = styled.div`
     background-color: rgba(8, 21, 136, 0);
     width: 100%;
+    margin-top: 4rem;
     h1 {
         color: #fff;
         font-family: Roboto Condensed;
@@ -57,7 +58,6 @@ const StyledWrapper = styled.div`
         padding: 1rem;
     }
     .about-text {
-        height: 45rem;
         background-color: #fff;
         padding: 3rem;
         padding-top: 1rem;
@@ -100,6 +100,7 @@ const StyledWrapper = styled.div`
             position: absolute;
             right: 1rem;
             bottom: 0;
+            top: 5rem;
             width: 50%;
             padding: 2rem;
         }

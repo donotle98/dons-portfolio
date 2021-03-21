@@ -98,6 +98,7 @@ export default SecondSection;
 
 const StyledWrapper = styled.div`
     font-family: Roboto Condensed;
+    margin-top: 4rem;
     img {
         width: 10rem;
     }

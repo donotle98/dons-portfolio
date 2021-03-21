@@ -128,6 +128,7 @@ const FourthSection = () => {
 const StyledWrapper = styled.div`
     max-width: 900px;
     margin: auto;
+    margin-top: 4rem;
     h1 {
         width: 100%;
         text-align: center;

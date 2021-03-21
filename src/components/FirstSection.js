@@ -49,6 +49,7 @@ export default FirstSection;
 const StyledWrapper = styled.div`
     padding-left: 0.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     .name {
         color: #081588;
         display: flex;
